@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Developer</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            position: fixed;
+            width: 100%;
+            box-shadow: 0 0.1px 10px rgb(74, 74, 74);
+            top: 0;
+            background-color: white;
+            
+        }
+        .head{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            
+        }
+        .head1 p{
+            font-size: 25px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            padding-right: 200px;
+            margin-left: 40px;
+        }
+        .head2 ul{
+            color: rgb(114, 114, 114);
+            display: flex;
+            list-style-type: none;
+            gap: 50px;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .head2 ul li{
+            transition: all ease 0.2s;
+        }
+        .head2 ul li:hover{
+            color: orange;
+            text-decoration: underline;
+        }
+        .head3 button{
+            margin-left: 250px;
+            background-color: yellowgreen;
+            padding: 14px 25px 14px 25px;
+            font-size: 16px;
+            border: 2px white solid;
+            border-radius: 100px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            font-weight: 500;
+            transition: all ease 0.2s;
+        }
+        .head3 button:hover{
+            transform: translateY(-5px);
+            background-color: blueviolet;
+        }
+        .main{
+            display: flex;
+            background-color: lavender;
+            height: 450px;
+            margin-top: 80px;
+        }
+        .intro h1{
+            padding-top: 50px;
+            padding-left: 320px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 40px;
+        }
+        span{
+            color: blue;
+        }
+        #para{
+            color: rgb(107, 105, 105);
+            width: 490px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 320px;
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 30px;
+            word-spacing: 5px;
+        }
+
+        .img img{
+            margin-left: 200px;
+            margin-top:100px;
+            margin-top: 50px;
+            border: 2px solid lavender;
+            border-radius: 30px;
+            height: 280px;
+            width: 450px;
+        }
+
+        #first{
+            margin-top: 40px;
+            margin-left: 320px;
+            background-color: rgb(54, 59, 223);
+            padding: 18px 25px 18px 25px;
+            font-size: 16px;
+            border: 2px  rgb(54, 59, 223) ;
+            border-radius: 100px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            font-weight: 500;
+            transition: all ease 0.4s;
+            
+        }
+        #first:hover{
+            transform: translateY(-10px);
+            background-color: lavender;
+            color: rgb(54, 59, 223);
+             border: solid rgb(54, 59, 223);
+        }
+        #second{
+            margin-left: 10px;
+            background-color: orange;
+            padding: 18px 25px 18px 25px;
+            font-size: 16px;
+            border: 2px orange;
+            border-radius: 100px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            font-weight: 500;
+            transition: all ease 0.4s;
+        }
+
+        #second:hover{
+            transform: translateY(-10px);
+            background-color: lavender;
+            color: orange;
+            border: solid orange;
+        }
+        .intro2{
+            margin-top: 50px;
+            
+        }
+        .intro2 p{
+            color: blue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            margin-left: 49.5%;
+            font-size: 20px;
+            
+        }
+        .intro2 h3{
+            margin-top: 20px;
+            margin-left: 47%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 35px;
+
+        }
+        .box{
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+            justify-content: center;
+            gap: 50px;
+        }
+        .box1{
+            height: 350px;
+            width: 400px;
+            border: 2px solid white;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgb(229, 226, 226);
+            transition: transform ease-in-out 0.3s;
+            
+        }
+        .box1:hover{
+            transform: translateY(-15px);
+            box-shadow: 0 0 10px rgb(179, 175, 175);
+            
+        }
+        .box1 img{
+            padding: 15px;
+            height: 25px;
+            width: 28px;
+            background-color: lavender;
+            border: 2px solid lavender;
+            border-radius: 100px;
+            margin-top: 50px;
+            margin-left: 42%;
+        }
+        #one{
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+        }
+        #one1{
+            color: rgb(106, 106, 106);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            width: 300px;
+            margin-top: 20px;
+            margin-left: 10%;
+            line-height: 23px;
+        }
+        #readmore{
+            
+            margin-top: 40px;
+            margin-left: 145px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            a{text-decoration: none; color: orange; font-weight: 600;}
+        }
+        .box2{
+             height: 350px;
+            width: 400px;
+            border: 2px solid white;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgb(229, 226, 226);
+            transition: transform ease-in-out 0.3s;
+        }
+        .box2:hover{
+            transform: translateY(-15px);
+            box-shadow: 0 0 10px rgb(179, 175, 175);
+            
+        }
+        .box2 img{
+            padding: 15px;
+            height: 25px;
+            width: 28px;
+            background-color: lavender;
+            border: 2px solid lavender;
+            border-radius: 100px;
+            margin-top: 50px;
+            margin-left: 42%;
+        }
+        .box3{
+            height: 350px;
+            width: 400px;
+            border: 2px solid white;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgb(229, 226, 226);
+            transition: transform ease-in-out 0.3s;
+        }
+        .box3:hover{
+            transform: translateY(-15px);
+            box-shadow: 0 0 10px rgb(179, 175, 175);
+            
+        }
+        .box3 img{
+            padding: 15px;
+            height: 25px;
+            width: 28px;
+            background-color: lavender;
+            border: 2px solid lavender;
+            border-radius: 100px;
+            margin-top: 50px;
+            margin-left: 42%;
+        }
+        .skills{
+            background-color: lavender;
+            display: flex;
+            margin-top: 70px;
+        }
+        .skill2img{
+            display: flex;
+        }
+        .skill2img1{
+            display: flex;
+        }
+        .skill1{
+            margin-left: 175px;
+            width: 800px;
+        }
+
+        #skill1p{
+            color: blueviolet;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            margin-top: 100px;
+            margin-left: 360px;
+            font-size: 18px;
+        }
+
+        .skill1 h2{
+            color: black;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-left: 290px;
+            font-size: 40px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        #skill1p2{
+            width: 500px;
+            text-align: center;
+            margin-left: 175px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            line-height: 30px;
+            color: rgb(93, 93, 93);
+        }
+        .skill2{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .skill2img{
+            gap: 50px;
+        }
+        .skill2img1{
+            gap: 50px;
+        }
+        .type1{
+            background-color:white;
+            height: 175px;
+            width: 300px;
+            margin-top: 100px;
+            border: 2px solid white;
+            border-radius: 10px ;
+            box-shadow: 0 0 8px rgb(162, 162, 162);
+            transition: all ease 0.3s;
+        }
+        .type1:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 0 8px rgb(115, 115, 115);
+        }
+        .type1 img{
+            height: 35px;
+            padding: 35px 0px 0px 135px;
+        }
+        .type2{
+            background-color: white;
+            height: 175px;
+            width: 300px;
+            margin-top: 100px;
+             border: 2px solid white;
+            border-radius: 10px ;
+            box-shadow: 0 0 8px rgb(162, 162, 162);
+            transition: all ease 0.3s;
+        }
+        .type2:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 0 8px rgb(115, 115, 115);
+        }
+        .type2 img{
+            height: 60px;
+            padding: 20px 0px 0px 120px;
+        }
+        .type3{
+            background-color: white;
+            height: 175px;
+            width: 300px;
+            margin-top: 100px;
+             border: 2px solid white;
+            border-radius: 10px ;
+            box-shadow: 0 0 8px rgb(162, 162, 162);
+            transition: all ease 0.3s;
+        }
+        .type3:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 0 8px rgb(115, 115, 115);
+        }
+        .type3 img{
+            height: 60px;
+            padding: 20px 0px 0px 120px;
+        }
+
+        .type4{
+            background-color: white;
+            height: 175px;
+            width: 300px;
+            margin-top: 100px;
+             border: 2px solid white;
+            border-radius: 10px ;
+            box-shadow: 0 0 8px rgb(162, 162, 162);
+            transition: all ease 0.3s;
+        }
+        .type4:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 0 8px rgb(115, 115, 115);
+        }
+        .type4 img{
+            height: 80px;
+            padding: 20px 0px 0px 120px;
+        }
+        .type1 p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            margin-top: 50px;
+            margin-left: 42%;
+            font-weight: 600;
+        }
+        
+        .type2 p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            margin-top: 50px;
+            margin-left: 42%;
+            font-weight: 600;
+        }
+        
+        .type3 p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            margin-top: 50px;
+            margin-left: 40%;
+            font-weight: 600;
+        }
+        
+        .type4 p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            margin-top: 50px;
+            margin-left: 38%;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="head1">
+                <p>Aarav</p>
+            </div>
+            <div class="head2">
+                <ul>
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>Skills</li>
+                    <li>Project</li>
+                    <li>Testimonals</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="head3">
+                <button>Contact Me</button>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="intro">
+            <h1>Hello! I Am <span>Aarav Chauhan</span> </h1>
+            <p id="para">Dynamic Full Stack Developer with 2+ years of
+                experience in building and deploying web apps
+                using Node.js, <b>Express.js</b>, Firebase, <b>MongoDB</b>,
+                React.js, and Next.js. Skilled in creating secure 
+                APIs, optimizing performance, and delivering innovative,
+                user-focused solutions.</p>
+                <button id="first" type="button">See my work</button>
+                <button id="second" type="button">Hire Me</button>
+        </div>
+        <div class="img">
+            <img src="logo.jpeg">
+        </div>
+    </div>
+
+    <div class="main2">
+        <div class="intro2">
+            <p>My Services</p>
+            <h3>What I Offer</h3>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="box1">
+            <img src="backend.png" alt="backend">
+            <p id="one">Backend Developement</p>
+            <p id="one1">Building secure, scalable
+                 APIs and server-side logic using Node.js
+                 , ExpressJS, Firebase, and MongoDB for 
+                 efficient data management and processing.</p>
+                 <p id="readmore"><a href="action">Read More</a></p>
+        </div>
+        <div class="box2">
+             <img src="frontend.png" alt="backend">
+            <p id="one">Frontend Developement</p>
+            <p id="one1">Creating modern, dynamic
+                 UIs with ReactJS and NextJS that
+                  deliver excellent user experiences
+                   with server-side rendering capabilities.</p>
+                 <p id="readmore"><a href="action">Read More</a></p>
+        </div>
+        <div class="box3">
+            <img src="performance.png" alt="backend">
+            <p id="one">Performance Optimization</p>
+            <p id="one1">Improving speed, efficiency,
+                 and reliability of web applications
+                  built with ReactJS, NextJS, and ExpressJS
+                   to enhance user engagement and SEO.</p>
+                 <p id="readmore"><a href="action">Read More</a></p>
+        </div>
+    </div>
+
+    <div class="skills">
+        <div class="skill1">
+            <p id="skill1p">My Skills</p>
+            <h2>My Expertise</h2>
+            <p id="skill1p2">I've spent years 
+                honing my skills in web development, 
+                specializing in modern JavaScript frameworks 
+                and technologies. My expertise includes <b>ReactJS</b>, 
+                <b>NextJS</b>, <b>ExpressJS</b>, and <b>MongoDB</b> for building 
+                full-stack applications with optimal performance 
+                and user experience.</p>
+        </div>
+        <div class="skill2">
+            <div class="skill2img">
+              <div class="type1">
+                <img src="Reactjs.png">
+                <p>ReactJS</p>
+              </div>
+              <div class="type2">
+                <img src="New.png">
+                <p>NextJS</p>
+              </div>
+            </div>
+            <div class="skill2img1">
+                <div class="type3">
+                    <img src="expressjs.png">
+                    <p>ExpressJS</p>
+                </div>
+                <div class="type4">
+                    <img src="Typescript.png">
+                    <p>TypeScript</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
