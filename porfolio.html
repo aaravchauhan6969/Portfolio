@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio - Developer</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <style>
         *{
             margin: 0;
@@ -571,7 +572,7 @@
         .div4{
             margin-top: 80px;
             background-color:lavender;
-            height: 800px;
+            height: 690px;
             
             justify-content: center;
             align-items: center;
@@ -600,16 +601,314 @@
             background-color: white;
             text-align: center;
             width: 720px;
-            height: 320px;
+            height: 360px;
             margin-top: 40px;
             margin-left: 580px;
             border: 2px solid white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgb(206, 200, 200);
+    
         }
         .div42 img{
-            margin-top: 40px;
+            margin-top: 30px;
             height: 30px;
+        }
+        .div42 p{
+            font-family: "Lexend", sans-serif;
+            margin-top: 25px;
+            width: 675px;
+            font-size: 17px;
+            line-height: 25px;
+            margin-left: 25px;
+            
+        }
+        .div42img img{
+            height: 70px;
+        }
+        #amit{
+            margin-top: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(86, 84, 84);
+        }
+        #amit1{
+            margin-top: 7px;
+            font-size: 15px;
+            color: gray;
+        }
+
+        .arrow{
+            margin-top: 40px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            gap: 25px;
+        }
+        .lessthan img{
+            margin-top: 3px;
+            transform: rotate(180deg);
+            height: 20px;
+            cursor: pointer;
+            transition: all ease 0.2s;
+        }
+        .lessthan img:hover{
+            transform: rotate(180deg) scale(1.3);
+        }
+        .greater img{
+            height: 20px;
+            margin-top: 3px;
+            cursor: pointer;
+            transition: all ease 0.2s;
+        }
+        
+        .greater img:hover{
+            transform: scale(1.3);
+        }
+        .dot{
+            display: flex;
+            gap: 8px;
+        }
+        .dot1{
+            height: 12px;
+            width: 12px;
+            background-color: blueviolet;
+            border-radius:100% ;
+            cursor: pointer;
+        }
+        .dot2, .dot3{
+            height: 10px;
+            width: 10px;
+            background-color: rgb(195, 191, 191);
+            border-radius:100% ;
+            cursor: pointer;
+        }
+
+        .beforef{
+            text-align: center;
+        }
+        .bf1 p{
+            color: blueviolet;
+            font-family: "Lexend", sans-serif;
+            font-weight: bold;
+            margin-top: 60px;
+            font-size: 18px;
+        }
+        .bf1 h1{
+            color: rgb(89, 89, 90);
+            font-family: "Lexend", sans-serif;
+            margin-top: 10px;
+        }
+        .bf2{
+            display: flex;
+            margin-top: 50px;
+        }
+        .bf21{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .location{
+            display: flex;
+            margin-left: 400px;
+        }
+        .locationdetail{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+        .location img{
+            background-color: lavender;
+            height: 25px;
+            width: 30px;
+            padding: 12px 10px 12px 15px;
+            border-radius: 100%;
+        }
+        .location h4{
+            font-family: "Lexend", sans-serif;
+            font-size: 20px;
+            margin-left: 15px;
+        }
+        .locationdetail p{
+            font-family: "Lexend", sans-serif;
+            padding-left: 16px;
+            padding-top: 10px;
+            color: rgb(103, 103, 103);
+        }
+        .email{
+            display: flex;
+             margin-left: 400px;
+        }
+        .emaildetail{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+        .email img{
+            background-color: lavender;
+            height: 25px;
+            width: 30px;
+            padding: 12px 8px 8px 15px;
+            border-radius: 100%;
+        }
+        .email h4{
+            font-family: "Lexend", sans-serif;
+            font-size: 20px;
+            margin-left: 15px;
+        }
+        .emaildetail p{
+            font-family: "Lexend", sans-serif;
+            padding-left: 16px;
+            padding-top: 10px;
+            color: rgb(103, 103, 103);
+        }
+        .phone{
+            display: flex;
+             margin-left: 400px;
+        }
+        .phonedetail{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+        .phone img{
+            background-color: lavender;
+            height: 25px;
+            width: 30px;
+            padding: 12px 8px 8px 15px;
+            border-radius: 100%;
+        }
+        .phone h4{
+            font-family: "Lexend", sans-serif;
+            font-size: 20px;
+            margin-left: 15px;
+        }
+        .phonedetail p{
+            font-family: "Lexend", sans-serif;
+            padding-left: 16px;
+            padding-top: 10px;
+            color: rgb(103, 103, 103);
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            margin-left: 275px;
+            gap: 20px;
+        }
+        #name{
+            height: 50px;
+            width: 500px;
+            font-family: "Lexend", sans-serif;
+            font-size: 16px;
+            border: 1px solid rgb(187, 185, 185);
+            border-radius: 4px;
+        }
+        #email{
+            height: 50px;
+            width: 500px;
+            font-family: "Lexend", sans-serif;
+            font-size: 16px;
+            border: 1px solid rgb(187, 185, 185);
+            border-radius: 4px;
+        }
+        #subject{
+            height: 50px;
+            width: 510px;
+            font-family: "Lexend", sans-serif;
+            font-size: 16px;
+            border: 1px solid rgb(187, 185, 185);
+            border-radius: 4px;
+        }
+        #message{
+            height: 100px;
+            width: 495px;
+            font-family: "Lexend", sans-serif;
+            font-size: 16px;
+           padding: 10px;
+           border: 1px solid rgb(187, 185, 185);
+            border-radius: 4px;
+        }
+
+        #name, #email, #subject::placeholder{
+            padding-left: 10px;
+        }
+        #submit{
+            width: 175px;
+            background-color: blueviolet;
+            color: white;
+            padding: 10px;
+            font-size: 17px;
+            font-family: "Lexend", sans-serif;
+            border: 1px solid white;
+            border-radius: 100px;
+            transition: all ease 0.3s;
+        }
+
+        #submit:hover{
+            transform: translateY(-5px);
+            background-color: white;
+            color: blueviolet;
+            border: 1px solid blueviolet;
+        }
+        .footer{
+            background-color: rgb(34, 89, 134);
+            display: flex;
+            margin-top: 70px;
+        }
+        .f1 h1{
+            margin-left: 400px;
+            margin-top: 50px;
+            font-family:"Lexend", sans-serif;
+            font-size: 35px;
+            color: white;
+        }
+
+        .f1 p{
+            margin-left: 400px;
+            margin-top: 10px;
+            font-family:"Lexend", sans-serif;
+            
+            color: rgb(157, 157, 157);
+        }
+        .f2{
+            margin-left: 250px;
+            margin-top: 50px;
+        }
+        .f2 ul{
+            display: flex;
+            list-style-type: none;
+            gap: 18px;
+            font-family: "Lexend", sans-serif;
+            color: rgb(179, 177, 177);
+            font-size: 17px;
+        }
+
+        .f2 ul img{
+            background-color: white;
+            border-radius: 100%;
+            padding: 5px;
+            height: 20px;
+            transition: all ease 0.3s;
+        }
+        .f2 ul img:hover{
+            transform: translateY(-6px);
+            background-color: orange;
+        }
+        .mainfooter{
+            margin: 0;
+            background-color:rgb(34, 89, 134);
+            text-align: center;
+            padding-top: 30px;
+        }
+        #mf1{
+            color: rgb(179, 177, 177);
+            opacity: 0.4;
+
+        }
+        #mf2{
+            color: rgb(179, 177, 177);
+            font-family: "Lexend", sans-serif;
+            padding-top: 30px;
+            padding-bottom: 20px;
         }
     </style>
 </head>
@@ -810,8 +1109,96 @@
         </div>
         <div class="div42">
             <img src="comma.png" alt="comma">
-            <p>"Abhishek did an outstanding job building the backend of our transporter app, Riyo. His speed, code quality, and problem-solving ability helped us go live faster than planned."</p>
+            <p><i>"Abhishek did an outstanding job
+                 building the backend of our transporter
+                  app, Riyo. His speed, code quality, and
+                   problem-solving ability helped us go live
+                    faster than planned."</i></p>
+                    <div class="div42img">
+                        <img src="face.png" alt="face">
+                        <p id="amit">Amit Sharma</p>
+                        <p id="amit1">Product Manager, Riyo</p>
+                    </div>
         </div>
+
+        <div class="arrow">
+            <div class="lessthan">
+                <img src="arrow-removebg-preview.png" alt="arrow">
+            </div>
+            <div class="dot">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+                <div class="dot3"></div>
+            </div>
+            <div class="greater">
+                <img src="arrow-removebg-preview.png" alt="arrow">
+            </div>
+        </div>
+    </div>
+
+    <div class="beforef">
+        <div class="bf1">
+            <p>Get In Touch</p>
+            <h1>Contact Me</h1>
+        </div>
+
+        <div class="bf2">
+            <div class="bf21">
+                <div class="location">
+                    <img src="location.png" alt="location">
+                    <div class="locationdetail">
+                    <h4>Location</h4>
+                    <p>Hisar, Haryana</p>
+                    </div>
+                </div>
+                <div class="email">
+                    <img src="email.png" alt="email">
+                    <div class="emaildetail">
+                        <h4>Email</h4>
+                        <p>abhishekmahla22@gmail.com</p>
+                    </div>
+                </div>
+                <div class="phone">
+                    <img src="phone.png" alt="phone">
+                    <div class="phonedetail">
+                        <h4>Phone</h4>
+                        <p>+91 8607080095</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bf22">
+                <form action="#action">
+                    <input type="text" placeholder="Your Name" id="name">
+                    <input type="email" placeholder="Your Email" id="email">
+                    <input type="text" placeholder="Subject" id="subject">
+                    <textarea placeholder="Your Message" id="message"></textarea>
+                    <button type="submit" id="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="f1">
+            <h1>Aarav Chauhan</h1>
+            <p>Dynamic Full Stack Developer</p>
+        </div>
+        <div class="f2">
+            <ul>
+                <li>Home</li>
+                <li>Service</li>
+                <li>Skills</li>
+                <li>Project</li>
+                <li>Testimonals</li>
+                <li>Contact</li>
+                <li><a href="https://github.com/aaravchauhan6969"><img src="github.png" alt="github" height="30px"></a></li>
+                <li><a href="https://www.linkedin.com/in/aarav-chauhan-43a288381/"><img src="linkedin.png"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mainfooter">
+        <p id="mf1">_____________________________________________________________________________________________________________________________________</p>
+        <p id="mf2">© 2025 Abhishek | All Rights Reserved</p>
     </div>
 </body>
 </html>
