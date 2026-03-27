@@ -7,6 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
         *{
             margin: 0;
             padding: 0;
@@ -50,7 +53,7 @@
             color: orange;
             text-decoration: underline;
         }
-        .head3 button{
+        .head3 a{
             margin-left: 250px;
             background-color: yellowgreen;
             padding: 14px 25px 14px 25px;
@@ -60,9 +63,10 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             color: white;
             font-weight: 500;
+            text-decoration: none;
             transition: all ease 0.2s;
         }
-        .head3 button:hover{
+        .head3 a:hover{
             transform: translateY(-5px);
             background-color: blueviolet;
         }
@@ -90,6 +94,7 @@
             font-size: 18px;
             line-height: 30px;
             word-spacing: 5px;
+            margin-bottom: 30px;
         }
 
         .img img{
@@ -113,10 +118,12 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             color: white;
             font-weight: 500;
+            text-decoration: none;
             transition: all ease 0.2s;
             
         }
         #first:hover{
+            
             transform: translateY(-5px);
             background-color: lavender;
             color: rgb(54, 59, 223);
@@ -426,10 +433,9 @@
         .recenthead{
             text-align: center;
         }
-        #first1{
+        #first1 {
             color: blueviolet;
             font-family:Verdana, Geneva, Tahoma, sans-serif;
-            
             margin-top: 80px;
             font-size: 18px;
             font-weight: bold;
@@ -936,7 +942,7 @@
                 </ul>
             </div>
             <div class="head3">
-                <button>Contact Me</button>
+                <a href="#form">Contact Me</a>
             </div>
         </div>
     </header>
@@ -949,7 +955,7 @@
                 React.js, and Next.js. Skilled in creating secure 
                 APIs, optimizing performance, and delivering innovative,
                 user-focused solutions.</p>
-                <button id="first" type="button">See my work</button>
+                <a id="first" href="#projectskill">See my work</a>
                 <button id="second" type="button">Hire Me</button>
         </div>
         <div class="img">
@@ -1031,7 +1037,7 @@
         </div>
     </div>
 
-    <div class="recent">
+    <div class="recent" id="projectskill">
         <div class="recenthead">
             <p id="first1">My Work</p>
             <p id="second2">Recent Project</p>
@@ -1173,7 +1179,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bf22">
+            <div class="bf22" id="form">
                 <form action="#action">
                     <input type="text" placeholder="Your Name" id="name">
                     <input type="email" placeholder="Your Email" id="email">
