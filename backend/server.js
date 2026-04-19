@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 // DB connect
-mongoose.connect("mongodb://127.0.0.1:27017/portfolio")
+mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log("MongoDB Connected"))
 .catch(err => console.log(err));
 
