@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            position: fixed;
+            width: 100%;
+            box-shadow: 0 0.1px 10px rgb(74, 74, 74);
+            top: 0;
+            background-color: white;
+            z-index: 1000; 
+            
+        }
+        .head{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            
+        }
+        .head1 p{
+            font-size: 25px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            padding-right: 200px;
+            margin-left: 40px;
+        }
+        .head2 ul{
+            color: rgb(114, 114, 114);
+            display: flex;
+            list-style-type: none;
+            gap: 50px;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .head2 ul li{
+            transition: all ease 0.2s;
+        }
+        .head2 ul li:hover{
+            color: orange;
+            text-decoration: underline;
+        }
+        .head3 a{
+            margin-left: 250px;
+            background-color: yellowgreen;
+            padding: 14px 25px 14px 25px;
+            font-size: 16px;
+            border: 2px white solid;
+            border-radius: 100px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all ease 0.2s;
+        }
+        .head3 a:hover{
+            transform: translateY(-5px);
+            background-color: blueviolet;
+        }
+        .main{
+            display: flex;
+            background-color: lavender;
+            height: 450px;
+            margin-top: 80px;
+        }
+        .intro h1{
+            padding-top: 50px;
+            padding-left: 320px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 40px;
+        }
+        span{
+            color: blue;
+        }
+        #para{
+            color: rgb(107, 105, 105);
+            width: 490px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 320px;
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 30px;
+            word-spacing: 5px;
+            margin-bottom: 30px;
+        }
+
+        .img img{
+            margin-left: 200px;
+            margin-top:100px;
+            margin-top: 50px;
+            border: 2px solid lavender;
+            border-radius: 30px;
+            height: 280px;
+            width: 450px;
+        }
+
+        #first{
+            margin-top: 40px;
+            margin-left: 320px;
+            background-color: rgb(54, 59, 223);
+            padding: 18px 22px 18px 22px;
+            font-size: 16px;
+            border: 2px  rgb(54, 59, 223) ;
+            border-radius: 100px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all ease 0.2s;
+            
+        }
+        #first:hover{
+            
+            transform: translateY(-5px);
+            background-color: lavender;
+            color: rgb(54, 59, 223);
+             border: 2px solid rgb(54, 59, 223);
+        }
+        #second{
+            margin-left: 20px;
+            background-color: orange;
+            padding: 18px 25px 18px 25px;
+            font-size: 16px;
+            border: 2px orange;
+            border-radius: 100px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            font-weight: 500;
+            transition: all ease 0.2s;
+        }
+
+        #second:hover{
+            transform: translateY(-5px);
+            background-color: lavender;
+            color: orange;
+            border: 2px solid orange;
+        }
+        .intro2{
+            margin-top: 50px;
+            
+        }
+        .intro2 p{
+            color: blue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            margin-left: 49.5%;
+            font-size: 20px;
+            
+        }
+        .intro2 h3{
+            margin-top: 20px;
+            margin-left: 47%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 35px;
+
+        }
+        .box{
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+            justify-content: center;
+            gap: 50px;
+        }
+        .box1{
+            height: 350px;
+            width: 400px;
+            border: 2px solid white;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgb(229, 226, 226);
+            transition: transform ease-in-out 0.3s;
+            
+        }
+        .box1:hover{
+            transform: translateY(-15px);
+            box-shadow: 0 0 10px rgb(179, 175, 175);
+            
+        }
+        .box1 img{
+            padding: 15px;
+            height: 25px;
+            width: 28px;
+            background-color: lavender;
+            border: 2px solid lavender;
+            border-radius: 100px;
+            margin-top: 50px;
+            margin-left: 42%;
+        }
+        #one{
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+        }
+        #one1{
+            color: rgb(106, 106, 106);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            width: 300px;
+            margin-top: 20px;
+            margin-left: 10%;
+            line-height: 23px;
+        }
+        #readmore{
+            
+            margin-top: 40px;
+            margin-left: 145px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            a{text-decoration: none; color: orange; font-weight: 600;}
+        }
+        .box2{
+             height: 350px;
+            width: 400px;
+            border: 2px solid white;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgb(229, 226, 226);
+            transition: transform ease-in-out 0.3s;
+        }
+        .box2:hover{
+            transform: translateY(-15px);
+            box-shadow: 0 0 10px rgb(179, 175, 175);
+            
+        }
+        .box2 img{
+            padding: 15px;
+            height: 25px;
+            width: 28px;
+            background-color: lavender;
+            border: 2px solid lavender;
+            border-radius: 100px;
+            margin-top: 50px;
+            margin-left: 42%;
+        }
+        .box3{
+            height: 350px;
+            width: 400px;
+            border: 2px solid white;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgb(229, 226, 226);
+            transition: transform ease-in-out 0.3s;
+        }
+        .box3:hover{
+            transform: translateY(-15px);
+            box-shadow: 0 0 10px rgb(179, 175, 175);
+            
+        }
+        .box3 img{
+            padding: 15px;
+            height: 25px;
+            width: 28px;
+            background-color: lavender;
+            border: 2px solid lavender;
+            border-radius: 100px;
+            margin-top: 50px;
+            margin-left: 42%;
+        }
+        .skills{
+            background-color: lavender;
+            display: flex;
+            margin-top: 70px;
+            padding-bottom: 50px;
+            
+        }
+        .skill2img{
+            display: flex;
+        }
+        .skill2img1{
+            display: flex;
+        }
+        .skill1{
+            margin-left: 175px;
+            width: 800px;
+        }
+
+        #skill1p{
+            color: blueviolet;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            margin-top: 100px;
+            margin-left: 360px;
+            font-size: 18px;
+        }
+
+        .skill1 h2{
+            color: black;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-left: 290px;
+            font-size: 40px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        #skill1p2{
+            width: 500px;
+            text-align: center;
+            margin-left: 175px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            line-height: 30px;
+            color: rgb(93, 93, 93);
+        }
+        .skill2{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .skill2img{
+            gap: 50px;
+        }
+        .skill2img1{
+            gap: 50px;
+        }
+        .type1{
+            background-color:white;
+            height: 175px;
+            width: 300px;
+            margin-top: 100px;
+            border: 2px solid white;
+            border-radius: 10px ;
+            box-shadow: 0 0 8px rgb(162, 162, 162);
+            transition: all ease 0.3s;
+        }
+        .type1:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 0 8px rgb(115, 115, 115);
+        }
+        .type1 img{
+            height: 47px;
+            padding: 35px 0px 0px 110px;
+        }
+        .type2{
+            background-color: white;
+            height: 175px;
+            width: 300px;
+            margin-top: 100px;
+             border: 2px solid white;
+            border-radius: 10px ;
+            box-shadow: 0 0 8px rgb(162, 162, 162);
+            transition: all ease 0.3s;
+        }
+        .type2:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 0 8px rgb(115, 115, 115);
+        }
+        .type2 img{
+            height: 78px;
+            padding: 20px 0px 0px 90px;
+        }
+        .type3{
+            background-color: white;
+            height: 175px;
+            width: 300px;
+            margin-top: 100px;
+             border: 2px solid white;
+            border-radius: 10px ;
+            box-shadow: 0 0 8px rgb(162, 162, 162);
+            transition: all ease 0.3s;
+        }
+        .type3:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 0 8px rgb(115, 115, 115);
+        }
+        .type3 img{
+            height: 78px;
+            padding: 20px 0px 0px 75px;
+        }
+
+        .type4{
+            background-color: white;
+            height: 175px;
+            width: 300px;
+            margin-top: 100px;
+             border: 2px solid white;
+            border-radius: 10px ;
+            box-shadow: 0 0 8px rgb(162, 162, 162);
+            transition: all ease 0.3s;
+        }
+        .type4:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 0 8px rgb(115, 115, 115);
+        }
+        .type4 img{
+            height: 80px;
+            padding: 20px 0px 0px 120px;
+        }
+        .type1 p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            margin-top: 40px;
+            margin-left: 42%;
+            font-weight: 600;
+        }
+        
+        .type2 p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            margin-top: 28px;
+            margin-left: 42%;
+            font-weight: 600;
+        }
+        
+        .type3 p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            margin-top: 30px;
+            margin-left: 45%;
+            font-weight: 600;
+        }
+        
+        .type4 p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            margin-top: 50px;
+            margin-left: 38%;
+            font-weight: 600;
+        }
+        .recent{
+            justify-content: center;
+            align-items: center;
+        }
+        .recenthead{
+            text-align: center;
+        }
+        #first1 {
+            color: blueviolet;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 80px;
+            font-size: 18px;
+            font-weight: bold;
+            
+        }
+        #second2{
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+            margin-top: 20px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        #skillbutton{
+            margin-top: 50px;
+            margin-left: 330px;
+            background-color: blueviolet;
+            padding: 14px 25px 14px 25px;
+            font-size: 16px;
+            border: 2px blueviolet solid;
+            border-radius: 100px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            font-weight: 500;
+            transition: all ease 0.2s;
+        }
+        #skillbutton:hover{
+            transform: translateY(-5px);
+            background-color: lavender;
+            border: 2px solid blueviolet;
+            color: blueviolet;
+        }
+        .projectbox{
+            margin-top: 70px;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        .pbox1, .pbox2, .pbox3{
+            height: 540px;
+            background-color: white;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgb(221, 218, 218);
+            transition: all ease 0.2s;
+        }
+        .pbox1:hover{
+            transform: translateY(-15px);
+            box-shadow: 0 0 10px rgb(189, 188, 188);
+        }
+        .pbox1 img{
+            height: 250px;
+            border-radius: 10px;
+            clip-path: inset(0 0 6px 0);
+            transition: transform ease 0.4s;
+            
+        }
+        .pbox1:hover img{
+            transform: scale(1.05);
+        }
+        .pbox2:hover{
+            transform: translateY(-15px);
+            box-shadow: 0 0 10px rgb(189, 188, 188);
+        }
+        .pbox2 img{
+            height: 250px;
+            clip-path: inset(0 0 6px 0);
+            border-radius: 10px;
+            transition: transform ease 0.4s;
+            
+        }
+        .pbox2:hover img{
+            transform: scale(1.1);
+        }
+        .pbox3:hover{
+            transform: translateY(-15px);
+            box-shadow: 0 0 10px rgb(189, 188, 188);
+        }
+        .pbox3 img{
+            height: 250px;
+            border-radius: 10px;
+            clip-path: inset(0 0 6px 0);
+            transition: transform ease 0.4s;
+        }
+        .pbox3:hover img{
+            transform: scale(1.1);
+        }
+        #pboxp1{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 28px;
+            color: rgb(79, 79, 79);
+        }
+        .paralink{
+            margin-left: 20px;
+            margin-top: 20px;
+            display: flex;
+            gap: 8px;
+        }
+        #pboxp2{
+            background-color: rgb(214, 246, 247);
+            padding:4px 8px 4px 8px;
+            border: 2px solid rgb(214, 246, 247);
+            border-radius: 100px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(44, 44, 245);
+            font-size: 15px;
+        }
+        #pboxp3{
+            background-color: rgb(214, 246, 247);
+            padding:4px 8px 4px 8px;
+            border: 2px solid rgb(214, 246, 247);
+            border-radius: 100px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(44, 44, 245);
+            font-size: 15px;
+            width: 100px;
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+        #pboxp4{
+            margin-top: 20px;
+            width: 300px;
+            text-align: left;
+            font-family: "Quicksand", sans-serif;
+            font-weight: 500;
+            color: rgb(81, 79, 79);
+            font-size: 15px;
+            margin-left: 20px;
+        }
+        #readmore2{
+            
+            margin-top: 20px;
+            margin-left: 20px;
+            font-family:"Quicksand", sans-serif;
+            a{text-decoration: none; color: orange; font-weight: bold;}
+        }
+        .div4{
+            margin-top: 80px;
+            background-color:lavender;
+            height: 690px;
+            
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .div41 {
+            text-align: center;
+        }
+
+        .div41 p{
+            color: blueviolet;
+            font-family: "Quicksand", sans-serif ;
+            font-weight: bold;
+            padding-top: 80px;
+            font-size: 20px
+        }
+        .div41 h1{
+            color: rgb(22, 21, 22);
+            font-family: "Quicksand", sans-serif ;
+            font-weight: bolder;
+            font-size: 40px;
+            padding-top: 20px;
+        }
+        .div42{
+            background-color: white;
+            text-align: center;
+            width: 720px;
+            height: 360px;
+            margin-top: 40px;
+            margin-left: 580px;
+            border: 2px solid white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(206, 200, 200);
+    
+        }
+        .div42 img{
+            margin-top: 30px;
+            height: 30px;
+        }
+        .div42 p{
+            font-family: "Lexend", sans-serif;
+            margin-top: 25px;
+            width: 675px;
+            font-size: 17px;
+            line-height: 25px;
+            margin-left: 25px;
+            
+        }
+        .div42img img{
+            height: 70px;
+        }
+        #amit{
+            margin-top: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(86, 84, 84);
+        }
+        #amit1{
+            margin-top: 7px;
+            font-size: 15px;
+            color: gray;
+        }
+
+        .arrow{
+            margin-top: 40px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            gap: 25px;
+        }
+        .lessthan img{
+            margin-top: 3px;
+            transform: rotate(180deg);
+            height: 20px;
+            cursor: pointer;
+            transition: all ease 0.2s;
+        }
+        .lessthan img:hover{
+            transform: rotate(180deg) scale(1.3);
+        }
+        .greater img{
+            height: 20px;
+            margin-top: 3px;
+            cursor: pointer;
+            transition: all ease 0.2s;
+        }
+        
+        .greater img:hover{
+            transform: scale(1.3);
+        }
+        .dot{
+            display: flex;
+            gap: 8px;
+        }
+        .dot1{
+            height: 12px;
+            width: 12px;
+            background-color: blueviolet;
+            border-radius:100% ;
+            cursor: pointer;
+        }
+        .dot2, .dot3{
+            height: 10px;
+            width: 10px;
+            background-color: rgb(195, 191, 191);
+            border-radius:100% ;
+            cursor: pointer;
+        }
+
+        .beforef{
+            text-align: center;
+        }
+        .bf1 p{
+            color: blueviolet;
+            font-family: "Lexend", sans-serif;
+            font-weight: bold;
+            margin-top: 60px;
+            font-size: 18px;
+        }
+        .bf1 h1{
+            color: rgb(89, 89, 90);
+            font-family: "Lexend", sans-serif;
+            margin-top: 10px;
+        }
+        .bf2{
+            display: flex;
+            margin-top: 50px;
+        }
+        .bf21{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .location{
+            display: flex;
+            margin-left: 400px;
+        }
+        .locationdetail{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+        .location img{
+            background-color: lavender;
+            height: 25px;
+            width: 30px;
+            padding: 12px 10px 12px 15px;
+            border-radius: 100%;
+        }
+        .location h4{
+            font-family: "Lexend", sans-serif;
+            font-size: 20px;
+            margin-left: 15px;
+        }
+        .locationdetail p{
+            font-family: "Lexend", sans-serif;
+            padding-left: 16px;
+            padding-top: 10px;
+            color: rgb(103, 103, 103);
+        }
+        .email{
+            display: flex;
+             margin-left: 400px;
+        }
+        .emaildetail{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+        .email img{
+            background-color: lavender;
+            height: 25px;
+            width: 30px;
+            padding: 12px 8px 8px 15px;
+            border-radius: 100%;
+        }
+        .email h4{
+            font-family: "Lexend", sans-serif;
+            font-size: 20px;
+            margin-left: 15px;
+        }
+        .emaildetail p{
+            font-family: "Lexend", sans-serif;
+            padding-left: 16px;
+            padding-top: 10px;
+            color: rgb(103, 103, 103);
+        }
+        .phone{
+            display: flex;
+             margin-left: 400px;
+        }
+        .phonedetail{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+        .phone img{
+            background-color: lavender;
+            height: 25px;
+            width: 30px;
+            padding: 12px 8px 8px 15px;
+            border-radius: 100%;
+        }
+        .phone h4{
+            font-family: "Lexend", sans-serif;
+            font-size: 20px;
+            margin-left: 15px;
+        }
+        .phonedetail p{
+            font-family: "Lexend", sans-serif;
+            padding-left: 16px;
+            padding-top: 10px;
+            color: rgb(103, 103, 103);
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            margin-left: 275px;
+            gap: 20px;
+        }
+        #name{
+            height: 50px;
+            width: 500px;
+            font-family: "Lexend", sans-serif;
+            font-size: 16px;
+            border: 1px solid rgb(187, 185, 185);
+            border-radius: 4px;
+        }
+        #email{
+            height: 50px;
+            width: 500px;
+            font-family: "Lexend", sans-serif;
+            font-size: 16px;
+            border: 1px solid rgb(187, 185, 185);
+            border-radius: 4px;
+        }
+        #subject{
+            height: 50px;
+            width: 510px;
+            font-family: "Lexend", sans-serif;
+            font-size: 16px;
+            border: 1px solid rgb(187, 185, 185);
+            border-radius: 4px;
+        }
+        #message{
+            height: 100px;
+            width: 495px;
+            font-family: "Lexend", sans-serif;
+            font-size: 16px;
+           padding: 10px;
+           border: 1px solid rgb(187, 185, 185);
+            border-radius: 4px;
+        }
+
+        #name, #email, #subject::placeholder{
+            padding-left: 10px;
+        }
+        #submit{
+            width: 175px;
+            background-color: blueviolet;
+            color: white;
+            padding: 10px;
+            font-size: 17px;
+            font-family: "Lexend", sans-serif;
+            border: 1px solid white;
+            border-radius: 100px;
+            transition: all ease 0.3s;
+        }
+
+        #submit:hover{
+            transform: translateY(-5px);
+            background-color: white;
+            color: blueviolet;
+            border: 1px solid blueviolet;
+        }
+        .footer{
+            background-color: rgb(34, 89, 134);
+            display: flex;
+            margin-top: 70px;
+        }
+        .f1 h1{
+            margin-left: 400px;
+            margin-top: 50px;
+            font-family:"Lexend", sans-serif;
+            font-size: 35px;
+            color: white;
+        }
+
+        .f1 p{
+            margin-left: 400px;
+            margin-top: 10px;
+            font-family:"Lexend", sans-serif;
+            
+            color: rgb(157, 157, 157);
+        }
+        .f2{
+            margin-left: 250px;
+            margin-top: 50px;
+        }
+        .f2 ul{
+            display: flex;
+            list-style-type: none;
+            gap: 18px;
+            font-family: "Lexend", sans-serif;
+            color: rgb(179, 177, 177);
+            font-size: 17px;
+        }
+        .f2 ul li{
+            cursor: pointer;
+            transition: all ease 0.2s;
+        }
+        .f2 ul li:hover{
+            color: orange;
+        }
+
+        .f2 ul img{
+            background-color: white;
+            border-radius: 100%;
+            padding: 5px;
+            height: 20px;
+            transition: all ease 0.3s;
+        }
+        .f2 ul img:hover{
+            transform: translateY(-6px);
+            background-color: orange;
+        }
+        .mainfooter{
+            margin: 0;
+            background-color:rgb(34, 89, 134);
+            text-align: center;
+            padding-top: 30px;
+        }
+        #mf1{
+            color: rgb(179, 177, 177);
+            opacity: 0.4;
+
+        }
+        #mf2{
+            color: rgb(179, 177, 177);
+            font-family: "Lexend", sans-serif;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="head1">
+                <p>Aarav Chauhan</p>
+            </div>
+            <div class="head2">
+                <ul>
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>Skills</li>
+                    <li>Project</li>
+                    <li>Testimonals</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="head3">
+                <a href="#form">Contact Me</a>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="intro">
+            <h1>Hello! I Am <span>Aarav Chauhan</span> </h1>
+            <p id="para">I'm a computer science student passionate 
+                about becoming a <b>Full Stack Developer</b>. I enjoy building 
+                responsive web applications and continuously improving 
+                my skills in <b>Java</b>, <b>Spring Boot</b>, and <b>Frontend Technologies</b>. 
+                I'm focused on writing clean code and creating practcal 
+                solutions that solve real-world problems.</p>
+                <a id="first" href="#projectskill">See my work</a>
+                <button id="second" type="button">Hire Me</button>
+        </div>
+        <div class="img">
+            <img src="logo.jpeg">
+        </div>
+    </div>
+
+    <div class="main2">
+        <div class="intro2">
+            <p>My Services</p>
+            <h3>What I Offer</h3>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="box1">
+            <img src="backend.png" alt="backend">
+            <p id="one">Backend Developement</p>
+            <p id="one1">Building secure, scalable
+                 APIs and server-side logic using Node.js
+                 , ExpressJS, Firebase, and MongoDB for 
+                 efficient data management and processing.</p>
+                 <p id="readmore"><a href="action">Read More</a></p>
+        </div>
+        <div class="box2">
+             <img src="frontend.png" alt="backend">
+            <p id="one">Frontend Developement</p>
+            <p id="one1">Creating modern, dynamic
+                 UIs with ReactJS and NextJS that
+                  deliver excellent user experiences
+                   with server-side rendering capabilities.</p>
+                 <p id="readmore"><a href="action">Read More</a></p>
+        </div>
+        <div class="box3">
+            <img src="performance.png" alt="backend">
+            <p id="one">Performance Optimization</p>
+            <p id="one1">Improving speed, efficiency,
+                 and reliability of web applications
+                  built with ReactJS, NextJS, and ExpressJS
+                   to enhance user engagement and SEO.</p>
+                 <p id="readmore"><a href="action">Read More</a></p>
+        </div>
+    </div>
+
+    <div class="skills">
+        <div class="skill1">
+            <p id="skill1p">My Skills</p>
+            <h2>My Expertise</h2>
+            <p id="skill1p2">I’m a passionate Computer Science student focused 
+                on web development. I enjoy building full-stack applications using 
+                <b>ReactJS</b>, <b>NextJS</b>, <b>ExpressJS</b>, and <b>MongoDB</b>, 
+                and continuously improving my skills to create fast, user-friendly, 
+                and scalable web solutions.</p>
+                <button type="button" id="skillbutton">Download CV</button>
+        </div>
+        <div class="skill2">
+            <div class="skill2img">
+              <div class="type1">
+                <img src="java.png">
+                <p>JAVA</p>
+              </div>
+              <div class="type2">
+                <img src="html.png">
+                <p>HTML</p>
+              </div>
+            </div>
+            <div class="skill2img1">
+                <div class="type3">
+                    <img src="css.png">
+                    <p>CSS</p>
+                </div>
+                <div class="type4">
+                    <img src="Typescript.png">
+                    <p>TypeScript</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recent" id="projectskill">
+        <div class="recenthead">
+            <p id="first1">My Work</p>
+            <p id="second2">Recent Project</p>
+        </div>
+    </div>
+    <div class="projectbox" >
+        <div class="pbox1">
+            <img src="project1.png" alt="project 1">
+            <p id="pboxp1">Photographer SaaS</p>
+            <div class="paralink">
+               <p id="pboxp2">Node.js</p><p id="pboxp2">FastAPI</p><p id="pboxp2">PostgreSQL</p>
+            </div>
+            <p id="pboxp3">Cloudflare R2</p>
+            <p id="pboxp4">An AI-powered SaaS platform for photography studios offering face
+                 recognition, photo management, and website builder tools.</p>
+            <p id="readmore2"><a href="action">View Project</a></p>
+        </div>
+        <div class="pbox2">
+            <img src="project2.png" alt="project 2">
+            <p id="pboxp1">Photographer SaaS</p>
+            <div class="paralink">
+               <p id="pboxp2">Node.js</p><p id="pboxp2">FastAPI</p><p id="pboxp2">PostgreSQL</p>
+            </div>
+            <p id="pboxp3">Cloudflare R2</p>
+            <p id="pboxp4">An AI-powered SaaS platform for photography studios offering face
+                 recognition, photo management, and website builder tools.</p>
+            <p id="readmore2"><a href="action">View Project</a></p>
+        </div>
+        <div class="pbox3">
+            <img src="project3.png" alt="project 3">
+            <p id="pboxp1">Photographer SaaS</p>
+            <div class="paralink">
+               <p id="pboxp2">Node.js</p><p id="pboxp2">FastAPI</p><p id="pboxp2">PostgreSQL</p>
+            </div>
+            <p id="pboxp3">Cloudflare R2</p>
+            <p id="pboxp4">An AI-powered SaaS platform for photography studios offering face
+                 recognition, photo management, and website builder tools.</p>
+            <p id="readmore2"><a href="action">View Project</a></p>
+        </div>
+    </div>
+
+    <div class="projectbox">
+        <div class="pbox1">
+            <img src="project1.png" alt="project 1">
+            <p id="pboxp1">Photographer SaaS</p>
+            <div class="paralink">
+               <p id="pboxp2">Node.js</p><p id="pboxp2">FastAPI</p><p id="pboxp2">PostgreSQL</p>
+            </div>
+            <p id="pboxp3">Cloudflare R2</p>
+            <p id="pboxp4">An AI-powered SaaS platform for photography studios offering face
+                 recognition, photo management, and website builder tools.</p>
+            <p id="readmore2"><a href="action">View Project</a></p>
+        </div>
+        <div class="pbox2">
+            <img src="project2.png" alt="project 2">
+            <p id="pboxp1">Photographer SaaS</p>
+            <div class="paralink">
+               <p id="pboxp2">Node.js</p><p id="pboxp2">FastAPI</p><p id="pboxp2">PostgreSQL</p>
+            </div>
+            <p id="pboxp3">Cloudflare R2</p>
+            <p id="pboxp4">An AI-powered SaaS platform for photography studios offering face
+                 recognition, photo management, and website builder tools.</p>
+            <p id="readmore2"><a href="action">View Project</a></p>
+        </div>
+        <div class="pbox3">
+            <img src="project3.png" alt="project 3">
+            <p id="pboxp1">Photographer SaaS</p>
+            <div class="paralink">
+               <p id="pboxp2">Node.js</p><p id="pboxp2">FastAPI</p><p id="pboxp2">PostgreSQL</p>
+            </div>
+            <p id="pboxp3">Cloudflare R2</p>
+            <p id="pboxp4">An AI-powered SaaS platform for photography studios offering face
+                 recognition, photo management, and website builder tools.</p>
+            <p id="readmore2"><a href="action">View Project</a></p>
+        </div>
+    </div>
+    
+    <div class="div4">
+        <div class="div41">
+            <p>Testimonials</p>
+            <h1>What Client Say</h1>
+        </div>
+        <div class="div42">
+            <img src="comma.png" alt="comma">
+            <p><i>"Abhishek did an outstanding job
+                 building the backend of our transporter
+                  app, Riyo. His speed, code quality, and
+                   problem-solving ability helped us go live
+                    faster than planned."</i></p>
+                    <div class="div42img">
+                        <img src="face.png" alt="face">
+                        <p id="amit">Amit Sharma</p>
+                        <p id="amit1">Product Manager, Riyo</p>
+                    </div>
+        </div>
+
+        <div class="arrow">
+            <div class="lessthan">
+                <img src="arrow-removebg-preview.png" alt="arrow">
+            </div>
+            <div class="dot">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+                <div class="dot3"></div>
+            </div>
+            <div class="greater">
+                <img src="arrow-removebg-preview.png" alt="arrow">
+            </div>
+        </div>
+    </div>
+
+    <div class="beforef">
+        <div class="bf1">
+            <p>Get In Touch</p>
+            <h1>Contact Me</h1>
+        </div>
+
+        <div class="bf2">
+            <div class="bf21">
+                <div class="location">
+                    <img src="location.png" alt="location">
+                    <div class="locationdetail">
+                    <h4>Location</h4>
+                    <p>Dehradun , Uttrakhand</p>
+                    </div>
+                </div>
+                <div class="email">
+                    <img src="email.png" alt="email">
+                    <div class="emaildetail">
+                        <h4>Email</h4>
+                        <p>a2zaaravx2024@gmail.com</p>
+                    </div>
+                </div>
+                <div class="phone">
+                    <img src="phone.png" alt="phone">
+                    <div class="phonedetail">
+                        <h4>Phone</h4>
+                        <p>+91 7505880830</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bf22" id="form">
+                <form action="https://formspree.io/f/xvzvqkdg" method="post">
+                    <input type="text" placeholder="Your Name" id="name" name="name">
+                    <input type="email" placeholder="Your Email" id="email" name="email">
+                    <input type="text" placeholder="Subject" id="subject" name="subject">
+                    <textarea placeholder="Your Message" id="message" name="message"></textarea>
+                    <button type="submit" id="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="f1">
+            <h1>Aarav Chauhan</h1>
+            <p>Dynamic Full Stack Developer</p>
+        </div>
+        <div class="f2">
+            <ul>
+                <li>Home</li>
+                <li>Service</li>
+                <li>Skills</li>
+                <li>Project</li>
+                <li>Testimonals</li>
+                <li>Contact</li>
+                <li><a href="https://github.com/aaravchauhan6969"><img src="github.png" alt="github" height="30px"></a></li>
+                <li><a href="https://www.linkedin.com/in/aarav-chauhan-43a288381/"><img src="linkedin.png"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mainfooter">
+        <p id="mf1">_____________________________________________________________________________________________________________________________________</p>
+        <p id="mf2">© 2025 Aarav Chauhan | All Rights Reserved</p>
+    </div>
+
+    <script>
+fetch("http://localhost:5000/projects")
+.then(res => res.json())
+.then(data => {
+    const container = document.getElementById("projectList");
+
+    data.forEach(project => {
+        const div = document.createElement("div");
+        div.classList.add("pbox1");
+
+        div.innerHTML = `
+            <img src="${project.image}" />
+            <p id="pboxp1">${project.title}</p>
+            <p id="pboxp4">${project.description}</p>
+        `;
+
+        container.appendChild(div);
+    });
+});
+</script>
+</body>
+</html>
