@@ -47,6 +47,15 @@
             font-weight: 500;
             cursor: pointer;
         }
+        .head2 ul li a{
+            color: rgb(114, 114, 114);
+            text-decoration: none;
+            transition: all ease 0.2s;
+        }
+        .head2 ul li a:hover{
+            color: orange;
+            text-decoration: underline;
+        }
         .head2 ul li{
             transition: all ease 0.2s;
         }
@@ -934,12 +943,12 @@
             </div>
             <div class="head2">
                 <ul>
-                    <li>Home</li>
-                    <li>Services</li>
-                    <li>Skills</li>
-                    <li>Project</li>
-                    <li>Testimonals</li>
-                    <li>Contact</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#serviceone">Services</a> </li>
+                    <li><a href="#skillp">Skills</a></li>
+                    <li><a href="#projectwork">Project</a> </li>
+                    <li><a href="#testimonals">Testimonals</a> </li>
+                    <li><a href="#form">Contact</a> </li>
                 </ul>
             </div>
             <div class="head3">
@@ -947,7 +956,7 @@
             </div>
         </div>
     </header>
-    <div class="main">
+    <div class="main" >
         <div class="intro">
             <h1>Hello! I Am <span>Aarav Chauhan</span> </h1>
             <p id="para">I'm a computer science student passionate 
@@ -964,8 +973,8 @@
         </div>
     </div>
 
-    <div class="main2">
-        <div class="intro2">
+    <div class="main2" >
+        <div class="intro2" id="serviceone">
             <p>My Services</p>
             <h3>What I Offer</h3>
         </div>
@@ -1001,7 +1010,7 @@
         </div>
     </div>
 
-    <div class="skills">
+    <div class="skills" id="skillp">
         <div class="skill1">
             <p id="skill1p">My Skills</p>
             <h2>My Expertise</h2>
@@ -1042,7 +1051,7 @@
             <p id="second2">Recent Project</p>
         </div>
     </div>
-    <div class="projectbox" >
+    <div class="projectbox" id="projectwork">
         <div class="pbox1">
             <img src="project1.png" alt="project 1">
             <p id="pboxp1">Photographer SaaS</p>
@@ -1114,7 +1123,7 @@
         </div>
     </div>
     
-    <div class="div4">
+    <div class="div4" id="testimonals">
         <div class="div41">
             <p>Testimonials</p>
             <h1>What Client Say</h1>
